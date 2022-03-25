@@ -2,9 +2,6 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 
-// Animation
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
 // Component
 import { AppComponent } from './app.component';
 import { FrontendLayoutComponent } from './layouts/frontend-layout/frontend-layout.component';
@@ -28,7 +25,12 @@ import { FooterBackendComponent } from './shared/backend/footer-backend/footer-b
 import { SidebarBackendComponent } from './shared/backend/sidebar-backend/sidebar-backend.component';
 
 // ngBootstrap
-import { NgbAlertModule, NgbModalConfig, NgbModule, NgbPaginationModule } from '@ng-bootstrap/ng-bootstrap';
+import {
+  NgbAlertModule,
+  NgbModalConfig,
+  NgbModule,
+  NgbPaginationModule,
+} from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -51,17 +53,16 @@ import { NgbAlertModule, NgbModalConfig, NgbModule, NgbPaginationModule } from '
     FooterFrontendComponent,
     HeaderBackendComponent,
     FooterBackendComponent,
-    SidebarBackendComponent
+    SidebarBackendComponent,
   ],
   imports: [
     BrowserModule,
-    BrowserAnimationsModule ,
     AppRoutingModule,
     NgbModule,
     NgbPaginationModule,
-    NgbAlertModule
+    NgbAlertModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
